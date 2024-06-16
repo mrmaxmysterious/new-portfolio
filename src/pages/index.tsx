@@ -4,10 +4,11 @@ import FadeIn from "~/components/fadeIn";
 import { useLanyard } from "react-use-lanyard";
 
 export default function Home() {
-  const { loading, status } = useLanyard({
+  const { loading, status } =  useLanyard({
 		userId: "728318691716104222",
 		socket: true,
 	});
+
   return (
     <>
       <Head>
@@ -15,7 +16,7 @@ export default function Home() {
         <link href="https://languages.abranhe.com/logos.css" rel="stylesheet"></link>
       </Head>
       <main className="mx-auto w-full max-w-[1700px] px-4 space-y-72">
-      <FadeIn><section className="flex flex-cols-2 gap-96 justify-center items-center h-screen" id="main">
+      <FadeIn><section className="flex flex-cols-2 gap-96 justify-center items-center h-screen">
           <div className="content-center">
             <p className="text-secondary text-5xl">Hello, I'm<br/> <span className="font-semibold">Max Henson</span></p>
             <p className="text-secondary text-xl pt-5">Full-stack developer</p>
@@ -31,13 +32,11 @@ export default function Home() {
                   <p>Say Hi 👋</p>
                 </div>
               </a>
-              <a className="text-secondary content-center mt-5">
-                <a href="#main">
-                  <div className="flex flex-cols-2 gap-1 content-center">
-                    <p>Discover my works</p> 
-                    <ArrowDown/>
-                  </div>
-                </a>
+              <a className="text-secondary content-center mt-5" href="#main">
+                <div className="flex flex-cols-2 gap-1 content-center">
+                  <p>Discover my works</p> 
+                  <ArrowDown/>
+                </div>
               </a>
             </div>
           </div>

@@ -7,7 +7,7 @@ const font = localFont({
 
 import "~/styles/globals.css";
 
-const MyApp: AppType = ({ Component, pageProps }) => {
+const Portfolio: AppType = ({ Component, pageProps }) => {
   return (
     <main className={`${font.className} bg-main bg-cover`}>
       <Component {...pageProps} />
@@ -15,4 +15,4 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+export default Portfolio;
