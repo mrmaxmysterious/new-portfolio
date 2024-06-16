@@ -8,6 +8,13 @@ export default {
       fontFamily: {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
       },
+      backgroundImage: {
+        main: "url('/bg.png')",
+      },
+      colors: {
+        secondary: "#FFFFFF",
+        relatio: "#40BCB3"
+      },
     },
   },
   plugins: [],
