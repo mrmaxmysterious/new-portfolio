@@ -13,7 +13,8 @@ export default {
       },
       colors: {
         secondary: "#FFFFFF",
-        relatio: "#40BCB3"
+        relatio: "#40BCB3",
+        card: "#161616",
       },
     },
   },

@@ -42,7 +42,7 @@ export default function Home() {
           </div>
           <div className="content-center">
             {!loading ? (
-              <FadeIn><img src={`https://cdn.discordapp.com/avatars/728318691716104222/${status?.discord_user.avatar}.png`} className="w-[200px] rounded-full" /></FadeIn>
+              <FadeIn><img src={`https://cdn.discordapp.com/avatars/728318691716104222/${status?.discord_user.avatar}.png`} className="w-[200px] rounded-full" draggable="false"/></FadeIn>
             ) : (
               <p className="text-secondary">Loading avatar...</p>
             )}
@@ -50,9 +50,12 @@ export default function Home() {
         </section></FadeIn>
         <FadeIn><section className="flex flex-rows-2 justify-center items-center" id="main">
           <div className="content-center">
+            <div className="grid place-content-center w-full items-center mb-2">
+              <p className="bg-card opacity-80 text-secondary rounded-md pl-3 pt-1 pb-1 pr-3 w-fit text-[10px]">Main Project</p>
+            </div>
             <p className="text-secondary text-5xl font-semibold text-center">Relatio <span className="text-relatio">Scheduler</span></p>
             <p className="text-secondary text-lg text-center">Your building blocks for Roblox HR.</p>
-            
+            <img src="https://api.monosnap.com/file/download?id=3SA07zOpo0Ws1FgEcRxp7Qi02IaXK6" className="border-solid border-10 border-secondary justify-center w-90" />
           </div>
           <div className="content-center">
             
