@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import { ArrowDown, AtSign } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import FadeIn from "~/components/fadeIn";
 import { useLanyard } from "react-use-lanyard";
 
@@ -23,7 +25,7 @@ export default function Home() {
           <section className="flex-cols-2 flex h-screen items-center justify-center gap-96 mx-auto w-full max-w-[1700px] px-4">
             <div className="content-center">
               <p className="text-5xl text-secondary">
-                Hello, I'm
+                Hello, I{"'"}m
                 <br /> <span className="font-semibold">Max Henson</span>
               </p>
               <p className="pt-5 text-xl text-secondary">
