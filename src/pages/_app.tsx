@@ -9,7 +9,7 @@ import "~/styles/globals.css";
 
 const Portfolio: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={`${font.className} bg-main bg-cover`}>
+    <main className={`${font.className} bg-main bg-cover bg-no-repeat`}>
       <Component {...pageProps} />
     </main>
   );
